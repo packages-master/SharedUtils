@@ -1,12 +1,12 @@
 package com.packagesmaster.sharedutils
 
-import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
+import com.packagesmaster.sharedutils.app.SharedUtilsController
 
-class SharedUtils(context: Context) {
+class SharedUtils() {
 
-    private val sharedPreferences = context.getSharedPreferences(context.packageName, MODE_PRIVATE)
+    private val sharedPreferences = SharedUtilsController.getSharedUtilsController().getSharedPreferences(SharedUtilsController.getSharedUtilsController().packageName, MODE_PRIVATE)
 
     companion object {
         private lateinit var instance: SharedUtils
