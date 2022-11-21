@@ -12,7 +12,8 @@ class SharedUtilsController: Application() {
         }
     }
 
-    init {
+    override fun onCreate() {
+        super.onCreate()
         instance = this
     }
 

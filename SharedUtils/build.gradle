@@ -43,7 +43,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.packagesmaster'
             artifactId = 'sharedutils'
-            version = '1.0.5'
+            version = '1.0.6'
 
             afterEvaluate {
                 from components.release
